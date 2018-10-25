@@ -9,56 +9,51 @@ package utils;
  */
 public class States {
 
-	/**
-	 * 
-	 */
-
-	private int mStateId;
-	private String mName;
-	private String mShortName;
-	private String mConstitutionText;
+	private int stateId;
+	private String name;
+	private String shortName;
+	private String constitutionText;
 	
-	public int getmStateId() {
-		return mStateId;
+	public States(int stateId, String name, String shortName, String constitutionText) {
+		this.stateId = stateId;
+		this.name = name;
+		this.shortName = shortName;
+		this.constitutionText = constitutionText;
 	}
 
-	public void setmStateId(int mStateId) {
-		this.mStateId = mStateId;
+	public int getStateId() {
+		return stateId;
 	}
 
-	public String getmName() {
-		return mName;
+	public void setStateId(int stateId) {
+		this.stateId = stateId;
 	}
 
-	public void setmName(String mName) {
-		this.mName = mName;
+	public String getName() {
+		return name;
 	}
 
-	public String getmShortName() {
-		return mShortName;
+	public void setName(String name) {
+		this.name = name;
 	}
 
-	public void setmShortName(String mShortName) {
-		this.mShortName = mShortName;
+	public String getShortName() {
+		return shortName;
 	}
 
-	public String getmConstitutionText() {
-		return mConstitutionText;
+	public void setShortName(String shortName) {
+		this.shortName = shortName;
 	}
 
-	public void setmConstitutionText(String mConstitutionText) {
-		this.mConstitutionText = mConstitutionText;
+	public String getConstitutionText() {
+		return constitutionText;
 	}
-	
+
+	public void setConstitutionText(String constitutionText) {
+		this.constitutionText = constitutionText;
+	}
+
 	public States() {
 		// TODO Auto-generated constructor stub
 	}
-
-	public States(int mStateId, String mName, String mShortName, String mConstitutionText) {
-		this.mStateId = mStateId;
-		this.mName = mName;
-		this.mShortName = mShortName;
-		this.mConstitutionText = mConstitutionText;
-	}
-
 }

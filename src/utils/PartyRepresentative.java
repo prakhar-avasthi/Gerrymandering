@@ -2,42 +2,41 @@ package utils;
 
 public class PartyRepresentative {
 
-	private int mRepresentativeId;
-	private String mName;
-	private String mAddress;
-	
-	public PartyRepresentative(int mRepresentativeId, String mName, String mAddress) {
-		this.mRepresentativeId = mRepresentativeId;
-		this.mName = mName;
-		this.mAddress = mAddress;
+	private int representativeId;
+	private String name;
+	private String address;
+
+	public int getRepresentativeId() {
+		return representativeId;
 	}
 
-	public int getmRepresentativeId() {
-		return mRepresentativeId;
+	public void setRepresentativeId(int representativeId) {
+		this.representativeId = representativeId;
 	}
 
-	public void setmRepresentativeId(int mRepresentativeId) {
-		this.mRepresentativeId = mRepresentativeId;
+	public String getName() {
+		return name;
 	}
 
-	public String getmName() {
-		return mName;
+	public void setName(String name) {
+		this.name = name;
 	}
 
-	public void setmName(String mName) {
-		this.mName = mName;
+	public String getAddress() {
+		return address;
 	}
 
-	public String getmAddress() {
-		return mAddress;
+	public void setAddress(String address) {
+		this.address = address;
 	}
 
-	public void setmAddress(String mAddress) {
-		this.mAddress = mAddress;
+	public PartyRepresentative(int representativeId, String name, String address) {
+		this.representativeId = representativeId;
+		this.name = name;
+		this.address = address;
 	}
 
 	public PartyRepresentative() {
 		// TODO Auto-generated constructor stub
 	}
-
 }

@@ -3,62 +3,51 @@ import org.json.*;
 
 class Precincts {
 
-	private int mPrecinctId;
-	private String mCenterPoint;
-	private JSONObject mBoundary;
-	private int mDistrictId;
-	
-	
-	public Precincts(int mPrecinctId, String mCenterPoint, JSONObject mBoundary, int mDistrictId) {
-		this.mPrecinctId = mPrecinctId;
-		this.mCenterPoint = mCenterPoint;
-		this.mBoundary = mBoundary;
-		this.mDistrictId = mDistrictId;
+	private int precinctId;
+	private String centerPoint;
+	private JSONObject boundary;
+	private int districtId;
+
+	public Precincts(int precinctId, String centerPoint, JSONObject boundary, int districtId) {
+		this.precinctId = precinctId;
+		this.centerPoint = centerPoint;
+		this.boundary = boundary;
+		this.districtId = districtId;
 	}
 
-
-	public int getmPrecinctId() {
-		return mPrecinctId;
+	public int getPrecinctId() {
+		return precinctId;
 	}
 
-
-	public void setmPrecinctId(int mPrecinctId) {
-		this.mPrecinctId = mPrecinctId;
+	public void setPrecinctId(int precinctId) {
+		this.precinctId = precinctId;
 	}
 
-
-	public String getmCenterPoint() {
-		return mCenterPoint;
+	public String getCenterPoint() {
+		return centerPoint;
 	}
 
-
-	public void setmCenterPoint(String mCenterPoint) {
-		this.mCenterPoint = mCenterPoint;
+	public void setCenterPoint(String centerPoint) {
+		this.centerPoint = centerPoint;
 	}
 
-
-	public JSONObject getmBoundary() {
-		return mBoundary;
+	public JSONObject getBoundary() {
+		return boundary;
 	}
 
-
-	public void setmBoundary(JSONObject mBoundary) {
-		this.mBoundary = mBoundary;
+	public void setBoundary(JSONObject boundary) {
+		this.boundary = boundary;
 	}
 
-
-	public int getmDistrictId() {
-		return mDistrictId;
+	public int getDistrictId() {
+		return districtId;
 	}
 
-
-	public void setmDistrictId(int mDistrictId) {
-		this.mDistrictId = mDistrictId;
+	public void setDistrictId(int districtId) {
+		this.districtId = districtId;
 	}
-
 
 	public Precincts() {
 		// TODO Auto-generated constructor stub
 	}
-
 }

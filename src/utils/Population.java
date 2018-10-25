@@ -4,74 +4,61 @@ import java.util.Date;
 
 public class Population {
 
-	private int mPoputationId;
-	private Date mDate;
-	private double mPopulation;
-	private int mPrecinctId;
-	private int mDistrictId;
-	
-	
-	public Population(int mPoputationId, Date mDate, double mPopulation, int mPrecinctId, int mDistrictId) {
-		this.mPoputationId = mPoputationId;
-		this.mDate = mDate;
-		this.mPopulation = mPopulation;
-		this.mPrecinctId = mPrecinctId;
-		this.mDistrictId = mDistrictId;
+	private int poputationId;
+	private Date date;
+	private double population;
+	private int precinctId;
+	private int districtId;
+
+	public Population(int poputationId, Date date, double population, int precinctId, int districtId) {
+		this.poputationId = poputationId;
+		this.date = date;
+		this.population = population;
+		this.precinctId = precinctId;
+		this.districtId = districtId;
 	}
 
-
-	public int getmPoputationId() {
-		return mPoputationId;
+	public int getPoputationId() {
+		return poputationId;
 	}
 
-
-	public void setmPoputationId(int mPoputationId) {
-		this.mPoputationId = mPoputationId;
+	public void setPoputationId(int poputationId) {
+		this.poputationId = poputationId;
 	}
 
-
-	public Date getmDate() {
-		return mDate;
+	public Date getDate() {
+		return date;
 	}
 
-
-	public void setmDate(Date mDate) {
-		this.mDate = mDate;
+	public void setDate(Date date) {
+		this.date = date;
 	}
 
-
-	public double getmPopulation() {
-		return mPopulation;
+	public double getPopulation() {
+		return population;
 	}
 
-
-	public void setmPopulation(double mPopulation) {
-		this.mPopulation = mPopulation;
+	public void setPopulation(double population) {
+		this.population = population;
 	}
 
-
-	public int getmPrecinctId() {
-		return mPrecinctId;
+	public int getPrecinctId() {
+		return precinctId;
 	}
 
-
-	public void setmPrecinctId(int mPrecinctId) {
-		this.mPrecinctId = mPrecinctId;
+	public void setPrecinctId(int precinctId) {
+		this.precinctId = precinctId;
 	}
 
-
-	public int getmDistrictId() {
-		return mDistrictId;
+	public int getDistrictId() {
+		return districtId;
 	}
 
-
-	public void setmDistrictId(int mDistrictId) {
-		this.mDistrictId = mDistrictId;
+	public void setDistrictId(int districtId) {
+		this.districtId = districtId;
 	}
-
 
 	public Population() {
 		// TODO Auto-generated constructor stub
 	}
-
 }

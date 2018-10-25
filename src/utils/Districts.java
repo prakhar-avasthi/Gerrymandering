@@ -11,66 +11,51 @@ import org.json.JSONObject;
  */
 public class Districts {
 
-	/**
-	 * 
-	 */
+	private int districtId;
+	private int stateId;
+	private String name;
+	private JSONObject boundary;
 	
-	private int mDistrictId;
-	private int mStateId;
-	private String mName;
-	private JSONObject mBoundary;
-	
-	
-	public Districts(int mDistrictId, int mStateId, String mName, JSONObject mBoundary) {
-		this.mDistrictId = mDistrictId;
-		this.mStateId = mStateId;
-		this.mName = mName;
-		this.mBoundary = mBoundary;
+	public Districts(int districtId, int stateId, String name, JSONObject boundary) {
+		this.districtId = districtId;
+		this.stateId = stateId;
+		this.name = name;
+		this.boundary = boundary;
 	}
 
-
-	public int getmDistrictId() {
-		return mDistrictId;
+	public int getDistrictId() {
+		return districtId;
 	}
 
-
-	public void setmDistrictId(int mDistrictId) {
-		this.mDistrictId = mDistrictId;
+	public void setDistrictId(int districtId) {
+		this.districtId = districtId;
 	}
 
-
-	public int getmStateId() {
-		return mStateId;
+	public int getStateId() {
+		return stateId;
 	}
 
-
-	public void setmStateId(int mStateId) {
-		this.mStateId = mStateId;
+	public void setStateId(int stateId) {
+		this.stateId = stateId;
 	}
 
-
-	public String getmName() {
-		return mName;
+	public String getName() {
+		return name;
 	}
 
-
-	public void setmName(String mName) {
-		this.mName = mName;
+	public void setName(String name) {
+		this.name = name;
 	}
 
-
-	public JSONObject getmBoundary() {
-		return mBoundary;
+	public JSONObject getBoundary() {
+		return boundary;
 	}
 
-
-	public void setmBoundary(JSONObject mBoundary) {
-		this.mBoundary = mBoundary;
+	public void setBoundary(JSONObject boundary) {
+		this.boundary = boundary;
 	}
-
 
 	public Districts() {
 		// TODO Auto-generated constructor stub
 	}
-
 }
